@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#after {
+    width: 962px;
+    height: 540px;
+    display: flex;
+    background-image: url(./img/after.png);
+    background-size: contain;
+    margin: 20px;
+}
+
+#before {
+    width: 480px;
+    height: 540px;
+    background-image: url(./img/before.png);
+    background-size: cover;
+    z-index: 1;
+    opacity: 1;
+}
+
+
+
+#ligne {
+    width: 2px;
+    height: 540px;
+    background-color: brown;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+#slideB {
+    width: 2px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: brown;
+    scale: 18;
+    position: relative;
+
+}
+
+.animation {
+    animation: 10s bipbip 1s infinite;
+}
+
+
+@keyframes bipbip {
+    30% {
+        scale: 18;
+        right: 0;
+    }
+
+    32% {
+        scale: 15;
+        right: 10px;
+    }
+
+    34% {
+        scale: 18;
+        right: 0;
+    }
+
+    36% {
+        scale: 18;
+        right: 0;
+    }
+
+    38% {
+        scale: 15;
+        right: -10px;
+    }
+
+    40% {
+        scale: 18;
+        right: 0;
+    }
+
+}
+
+#slideB:hover {
+    cursor: grab;
+    background-color: cadetblue;
+}
+
+#slideB:active {
+    cursor: grabbing;
+}
+
+
+#action {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lesBoutons {
+    border: black solid 4px;
+    background-color: bisque;
+    border-radius: 14px;
+    padding: 2px 20px;
+    font-size: 2em;
+    box-shadow: 2px 2px 5px black;
+    transition: 0.2s;
+}
+
+.lesBoutons:hover {
+    cursor: pointer;
+    background-color: cadetblue;
+    color: bisque;
+
+}
+
+.lesBoutons:active {
+    box-shadow: inset 2px 2px 5px black;
+}
+
+#bouton {
+    border: black solid 4px;
+    background-color: bisque;
+    border-radius: 14px;
+    width: 520px;
+    margin: 10.5px 0;
+
+}
+
+
+
+#rond {
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 2px 5px black;
+    scale: 2;
+}
+
+#rond:hover {
+    cursor: grab;
+    background-color: cadetblue;
+
+
+}
+
+#rond:active {
+    cursor: grabbing;
+
+}
