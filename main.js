@@ -79,6 +79,8 @@ function dragSlide(e) {
     positionClicB = e.clientX;
     document.addEventListener("mousemove", moveSlide);
     document.addEventListener("pointerup", finDuslide);
+    left.style.left = 0 + "px";
+
     
 }
 
