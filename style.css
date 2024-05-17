@@ -41,6 +41,7 @@ body {
     height: 20px;
     border-radius: 10px;
     background-color: brown;
+    border: solid 1px brown;
     background-image: url(./img/criz.png);
     background-size: cover;
     scale: 2;

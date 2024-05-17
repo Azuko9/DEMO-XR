@@ -5,6 +5,7 @@ const avant = document.querySelector("#avant");
 const apres = document.querySelector("#apres");
 const mire = document.querySelector(".mire");
 const mire2 = document.querySelector(".mire2");
+const anim = document. querySelector(".animation")
 
 
 let valopacity = 0;
@@ -95,6 +96,8 @@ function dragSlide(e) {
     mire.style.opacity = 1;
     mire2.style.opacity = 1;
     left.style.left = 0 + "px";
+    anim.classList.remove("animation");
+
 
     
 }
@@ -107,6 +110,7 @@ function moveSlide(e) {
 function finDuslide(e){
     document.removeEventListener("mousemove", moveSlide);
     glissmemoB = posGlissadeB;
+    anim.classList.add("animation");
      console.log(glissmemoB);
     
      if (glissmemoB < -480) {
