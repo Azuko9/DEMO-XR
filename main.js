@@ -93,6 +93,7 @@ function dragSlide(e) {
     document.addEventListener("pointerup", finDuslide);
     before.style.opacity = 1;
     mire.style.opacity = 1;
+    mire2.style.opacity = 1;
     left.style.left = 0 + "px";
 
     
