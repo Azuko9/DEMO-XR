@@ -3,6 +3,7 @@ const slideb = document.querySelector("#slideB");
 const before = document.querySelector("#before");
 const avant = document.querySelector("#avant");
 const apres = document.querySelector("#apres");
+const mire = document.querySelector("#mire");
 
 
 let valopacity = 0;
@@ -19,6 +20,7 @@ avant.addEventListener("click", function ()
     valopacity = 500;
     before.style.opacity = valopacity/500 ;
     left.style.left = 500-valopacity + "px";
+    mire.style.opacity = valopacity/500;
     before.style.width = 960 + "px";
 });
 
@@ -26,6 +28,7 @@ apres.addEventListener("click", function ()
 {
 
     valopacity = 500;
+    mire.style.opacity = valopacity/500;
     before.style.opacity = valopacity/500 ;
     before.style.width = 0 + "px";
     left.style.left = 500-valopacity + "px";
@@ -49,10 +52,12 @@ function  moverond(e) {
     posGlissade =  glissmemo + (e.clientX - positionClic);
     left.style.left =  posGlissade +"px";
     before.style.opacity = 1 - (posGlissade /500);
+    mire.style.opacity = 1 - (posGlissade /500);
     if (posGlissade < 0 ){
         posGlissade = 0;
         left.style.left =  posGlissade +"px";
         before.style.opacity = 1 - (posGlissade /500);
+        mire.style.opacity = 1 - (posGlissade /500);
     
     }
 
@@ -60,6 +65,7 @@ function  moverond(e) {
         posGlissade =500;
         left.style.left =  posGlissade +"px";
         before.style.opacity = 1 - (posGlissade /500);
+        mire.style.opacity = 1 - (posGlissade /500);
     }
 }
 
@@ -80,6 +86,7 @@ function dragSlide(e) {
     document.addEventListener("mousemove", moveSlide);
     document.addEventListener("pointerup", finDuslide);
     before.style.opacity = 1;
+    mire.style.opacity = 1;
     left.style.left = 0 + "px";
 
     

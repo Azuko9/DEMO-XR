@@ -140,6 +140,8 @@ body {
     position: relative;
     box-shadow: 2px 2px 5px black;
     scale: 2;
+    background-image: url(./img/criz.jpeg);
+    background-size: cover;
 }
 
 #rond:hover {
@@ -152,4 +154,12 @@ body {
 #rond:active {
     cursor: grabbing;
 
+}
+
+#mire {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-image: url(./img/pointMir.jpeg);
+    background-size: cover;
 }
