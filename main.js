@@ -29,11 +29,11 @@ avant.addEventListener("click", function ()
 apres.addEventListener("click", function ()
 {
 
-    valopacity = 500;
+    valopacity = 0;
     mire.style.opacity = valopacity/500;
     mire2.style.opacity = valopacity/500;
     before.style.opacity = valopacity/500 ;
-    before.style.width = 0 + "px";
+    before.style.width = 960 + "px";
     left.style.left = 500-valopacity + "px";
 });
 
