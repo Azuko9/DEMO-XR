@@ -3,7 +3,8 @@ const slideb = document.querySelector("#slideB");
 const before = document.querySelector("#before");
 const avant = document.querySelector("#avant");
 const apres = document.querySelector("#apres");
-const mire = document.querySelector("#mire");
+const mire = document.querySelector(".mire");
+const mire2 = document.querySelector(".mire2");
 
 
 let valopacity = 0;
@@ -21,6 +22,7 @@ avant.addEventListener("click", function ()
     before.style.opacity = valopacity/500 ;
     left.style.left = 500-valopacity + "px";
     mire.style.opacity = valopacity/500;
+    mire2.style.opacity = valopacity/500;
     before.style.width = 960 + "px";
 });
 
@@ -29,6 +31,7 @@ apres.addEventListener("click", function ()
 
     valopacity = 500;
     mire.style.opacity = valopacity/500;
+    mire2.style.opacity = valopacity/500;
     before.style.opacity = valopacity/500 ;
     before.style.width = 0 + "px";
     left.style.left = 500-valopacity + "px";
@@ -53,11 +56,13 @@ function  moverond(e) {
     left.style.left =  posGlissade +"px";
     before.style.opacity = 1 - (posGlissade /500);
     mire.style.opacity = 1 - (posGlissade /500);
+    mire2.style.opacity = 1 - (posGlissade /500);
     if (posGlissade < 0 ){
         posGlissade = 0;
         left.style.left =  posGlissade +"px";
         before.style.opacity = 1 - (posGlissade /500);
         mire.style.opacity = 1 - (posGlissade /500);
+        mire2.style.opacity = 1 - (posGlissade /500);
     
     }
 
@@ -66,6 +71,7 @@ function  moverond(e) {
         left.style.left =  posGlissade +"px";
         before.style.opacity = 1 - (posGlissade /500);
         mire.style.opacity = 1 - (posGlissade /500);
+        mire2.style.opacity = 1 - (posGlissade /500);
     }
 }
 
