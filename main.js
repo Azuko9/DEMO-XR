@@ -58,8 +58,8 @@ function  moverond(e) {
     before.style.opacity = 1 - (posGlissade /500);
     mire.style.opacity = 1 - (posGlissade /500);
     mire2.style.opacity = 1 - (posGlissade /500);
-    if (posGlissade < 0 ){
-        posGlissade = 0;
+    if (posGlissade < 16 ){
+        posGlissade = 16;
         left.style.left =  posGlissade +"px";
         before.style.opacity = 1 - (posGlissade /500);
         mire.style.opacity = 1 - (posGlissade /500);
