@@ -18,7 +18,7 @@ body {
 #before {
     width: 480px;
     height: 540px;
-    background-image: url(./img/before.png);
+    /* background-image: url(./img/before.png); */
     background-size: cover;
     z-index: 2;
     opacity: 1;
@@ -186,7 +186,7 @@ body {
 #videoAfter{
     position: absolute;
     height: 540px;
-    width: 962px;
+    object-fit: cover;
 }
     
     #btnVideo{
