@@ -130,7 +130,6 @@ var videaoBef = document.getElementById("videoBefore");
 
 var btn = document.getElementById("btnVideo");
 
- 
 
 function playAndPause () {
 
