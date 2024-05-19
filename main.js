@@ -123,3 +123,33 @@ function finDuslide(e){
         
      }
 }
+
+
+var videoAF = document.getElementById("videoAfter") ;
+var videaoBef = document.getElementById("videoBefore");
+
+var btn = document.getElementById("btnVideo");
+
+ 
+
+function playAndPause () {
+
+if (videaoBef.paused && videoAF.paused) {
+
+videaoBef.play();
+videoAF.play();
+
+btn.innerHTML = "II";
+
+} else {
+
+videaoBef.pause();
+videoAF.pause();
+
+btn.innerHTML = "▶";
+
+}
+
+
+
+}

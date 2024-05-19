@@ -10,7 +10,7 @@ body {
     width: 962px;
     height: 540px;
     display: flex;
-    background-image: url(./img/after.png);
+    /* background-image: url(./img/after.png); */
     background-size: contain;
     margin: 20px;
 }
@@ -20,8 +20,9 @@ body {
     height: 540px;
     background-image: url(./img/before.png);
     background-size: cover;
-    z-index: 1;
+    z-index: 2;
     opacity: 1;
+    overflow: hidden;
 }
 
 
@@ -175,3 +176,22 @@ body {
     background-image: url(./img/pointMir.png);
     background-size: cover;
 }
+
+.background-video {
+    height: 540px;
+    position: relative;
+    z-index: -1;
+    }
+    
+#videoAfter{
+    position: absolute;
+    height: 540px;
+    width: 962px;
+}
+    
+    #btnVideo{
+    font-size: 1.5rem;
+    width: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    }
